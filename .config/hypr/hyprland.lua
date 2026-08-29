@@ -335,7 +335,7 @@ hl.bind("ALT + TAB", hl.dsp.exec_cmd("noctalia msg window-switcher"))
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("hyprpicker -a -n"))
 hl.bind("CONTROL + Print", hl.dsp.exec_cmd(noctCall .. "screenshot-region"))
 hl.bind(mainMod .. " + CONTROL + Print", hl.dsp.exec_cmd(noctCall .. "screenshot-fullscreen"))
-hl.bind(mainMod .. " + G", hl.dsp.exec_cmd("cat ~/.github_token | tr -d '\n' | wl-copy"))
+hl.bind(mainMod .. " + G", hl.dsp.exec_cmd("cat ~/.sth_to_copy | tr -d '\n' | wl-copy"))
 -- Wallpaper
 hl.bind(mainMod .. " + CTRL + RIGHT", hl.dsp.exec_cmd("noctalia msg wallpaper-next"))
 hl.bind(mainMod .. " + CTRL + LEFT", hl.dsp.exec_cmd("noctalia msg wallpaper-previous"))
@@ -344,7 +344,7 @@ hl.bind(mainMod .. " + CTRL + LEFT", hl.dsp.exec_cmd("noctalia msg wallpaper-pre
 hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("noctalia msg keyboard-layout-cycle"))
 
 -- Night light
-hl.bind(mainMod .. " + U", hl.dsp.exec_cmd("noctalia msg nightlight-force-toggle"))
+hl.bind(mainMod .. " + U", hl.dsp.exec_cmd("noctalia msg nightlight-toggle"))
 -- Theming and Wallpaper
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("noctalia msg panel-toggle wallpaper"))
 
